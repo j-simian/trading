@@ -1,9 +1,8 @@
 open! Core
 open! Async
 
-module Handshake_initiate = struct
+module Message = struct
     type t = 
-        Identity of string
-
-    let create identity = Identity identity
+        | Handshake_initiate of string
+    [@@deriving bin_io, sexp]
 end
