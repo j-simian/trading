@@ -1,0 +1,9 @@
+lib: [
+  "_build/install/default/lib/trading/META"
+  "_build/install/default/lib/trading/dune-package"
+  "_build/install/default/lib/trading/opam"
+]
+bin: [
+  "_build/install/default/bin/esx_client"
+  "_build/install/default/bin/esx_server"
+]

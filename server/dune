@@ -1,0 +1,5 @@
+(executable
+ (public_name esx_server)
+ (name server)
+ (libraries async core core_unix.command_unix)
+ (preprocess (pps ppx_jane)))
