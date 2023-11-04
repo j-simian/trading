@@ -1,5 +1,5 @@
 (executable
- (public_name esx_client)
- (name client)
- (libraries async core core_unix.command_unix esx_kernel)
- (preprocess (pps ppx_jane)))
+  (public_name esx_client)
+  (name client)
+  (libraries async core core_unix.command_unix esx_kernel yojson)
+  (preprocess (pps ppx_jane)))

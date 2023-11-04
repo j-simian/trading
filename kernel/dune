@@ -1,4 +1,4 @@
 (library
- (name esx_kernel)
- (libraries async core core_unix.command_unix)
- (preprocess (pps ppx_jane)))
+  (name esx_kernel)
+  (libraries async core core_unix.command_unix yojson)
+  (preprocess (pps ppx_jane ppx_deriving_yojson)))
