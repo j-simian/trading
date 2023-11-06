@@ -10,7 +10,7 @@ let start_server port =
       ~on_handler_error:`Raise
       (Tcp.Where_to_listen.of_port port)
       (fun addr reader writer -> 
-         let reader = Reader.pipe reader in
+         let writer, reader = Writer.pipe writer, Reader.pipe reader in
          let%bind () = 
            Pipe.iter reader
              ~f:(fun line ->
